@@ -1,0 +1,27 @@
+/* Hide the default cursor on the entire page */
+/* body defaults to auto so the system pointer is visible outside .Hero */
+body {
+  cursor: auto;
+}
+.Hero {
+  position: relative; /* So we can place custom cursor inside it if needed */
+  cursor: none;       /* Hide the default pointer in this region */
+}
+/* The custom cursor element */
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ffffff;       /* White border */
+  border-radius: 50%;              /* Circular shape */
+  pointer-events: none;            /* So it doesn’t block clicks */
+  z-index: 9999;                   /* Stay on top of everything */
+  
+  /* Smoothly transition the cursor's position */
+  transition: transform 0.1s ease-out;
+  
+  /* Optional: add a subtle shadow for depth */
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

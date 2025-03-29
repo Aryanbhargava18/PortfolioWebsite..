@@ -1,0 +1,129 @@
+/* Import fonts if needed */
+@import url('https://fonts.googleapis.com/css2?family=Yatra+One&display=swap');
+
+/* Reset some basics */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container for the intro screen */
+.intro-screen {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #060D0D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Background screen for the drop effect */
+.background-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 30;
+  display: flex;
+  opacity: 1;
+  transform: translateY(-120vh); /* Initially off-screen */
+  transition: transform 1.2s ease-out, opacity 1.2s ease-in-out;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.background-screen.drop-background {   
+  transform: translateY(0);
+  pointer-events: auto;
+  transition: transform 1.2s ease-out 0s, opacity 1.2s ease-in-out;
+}
+
+.background-screen.exit-down {
+  transform: translateY(100vh) !important; /* Force downward exit */
+  transition: transform 1.2s ease-in-out 1.5s, opacity 1.2s ease-in-out 1.5s;
+  opacity: 0;
+}
+
+.background-screen.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Intro text container */
+.intro-text-container {
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  transition: transform 2.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+/* Intro text styles */
+.intro-text {
+  color: white;
+  font-family: 'Yatra One', serif;
+  font-size: 2rem; /* Adjust as needed */
+  line-height: 1.2;
+}
+
+/* Fade-out effect for intro text */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.8s ease-out;
+}
+
+/* Drop column styles (used for the drop effect) */
+.drop-column {
+  flex: 1;
+  background-color: #006443;
+  transform: translateY(-120vh); /* Start off-screen */
+  transition: transform 1.2s ease-out;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+/* When drop column becomes active */
+.drop-column.drop-active,
+.background-screen.drop-background .drop-column {
+  transform: translateY(0);
+}
+
+/* Example flex classes for drop columns */
+.flex1 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex3 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex4 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+.flex5 {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
