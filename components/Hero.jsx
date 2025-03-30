@@ -4,10 +4,8 @@ import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
 import Tilt from "react-parallax-tilt";
 import Navbar from "./Navbar";
-import videoFile from "/Users/aryan./Downloads/js prct/portfolioreact/src/assets/Sequence 01_3 (2).mp4";
-
-// 1) Import the new HeroScene
-// import HeroScene from "/Users/aryan./Downloads/js prct/portfolioreact/src/HeroScene.jsx";
+import videoFile from "/src/assets/Sequence 01_3 (2).mp4"; 
+ 
 
 const Hero = () => {
   return (

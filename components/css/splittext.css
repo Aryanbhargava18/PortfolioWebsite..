@@ -1,0 +1,29 @@
+@keyframes glitch {
+    0% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+    25% { text-shadow: -2px -2px #ff00ff, 2px 2px #00ffff; transform: translate(1px, -1px); }
+    50% { text-shadow: 2px -2px #ff00ff, -2px 2px #00ffff; transform: translate(-1px, 1px); }
+    75% { text-shadow: -2px 2px #ff00ff, 2px -2px #00ffff; transform: translate(1px, 1px); }
+    100% { text-shadow: 2px 2px #ff00ff, -2px -2px #00ffff; }
+  }
+  
+  @keyframes flicker {
+    0% { opacity: 0.1; text-shadow: 0 0 5px #fff; }
+    20% { opacity: 0.5; text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff; }
+    40% { opacity: 1; text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff, 0 0 30px #00ffff; }
+    60% { opacity: 0.7; text-shadow: 0 0 10px #fff, 0 0 20px #ff00ff; }
+    80% { opacity: 0.5; text-shadow: 0 0 5px #fff; }
+    100% { opacity: 1; text-shadow: 0 0 10px #fff, 0 0 20px #00ffff; }
+  }
+  
+  @keyframes rotate3D {
+    0% { transform: perspective(600px) rotateX(-90deg); opacity: 0; }
+    100% { transform: perspective(600px) rotateX(0deg); opacity: 1; }
+  }
+  
+  .animated-letter {
+    display: inline-block;
+    animation: rotate3D 1s ease-out forwards, flicker 1s infinite alternate, glitch 0.3s infinite alternate;
+    opacity: 0;
+    transform-origin: center;
+  }
+  

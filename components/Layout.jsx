@@ -1,5 +1,5 @@
 import React from 'react';
-import bgImage from '/Users/aryan./Downloads/js prct/portfolioreact/src/assets/image.png';
+import bgImage from '/src/assets/image.png';
 const Layout = ({ children }) => {
   return (
     <div 

@@ -35,7 +35,7 @@ const ServiceCard = ({ index, title, icon }) => (
   </div>
 </motion.div>
 
-  </Tilt>     
+  </Tilt>      
 );
 
 const About = () => {
@@ -43,7 +43,9 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <h1 className={styles.sectionSubText}>Hey! I'm</h1>
-        <h2 className={styles.sectionHeadText}>Aryan</h2>
+        <h2 className={`${styles.sectionHeadText} font-cinzel`}>
+  Aryan
+</h2> 
       </motion.div>
   
       <motion.p

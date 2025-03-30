@@ -7,7 +7,7 @@ function ParallaxDivider() {
       layers={[
         {
           loop: true,
-          speed: -37,
+          speed: -37, 
           children: (
             <svg 
               width="100%"

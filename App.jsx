@@ -3,12 +3,12 @@ import React, { useState, useEffect, useRef } from "react";
 import { ParallaxProvider } from "react-scroll-parallax"; 
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import Layout from "./components/Layout";
-import ParallaxDivider from "/Users/aryan./Downloads/js prct/portfolioreact/src/ParallaxDivider.jsx"; // 2) import your divider
+import ParallaxDivider from "./ParallaxDivider.jsx"; 
 import SectionReveal from "./SectionReveal";
-import IntroScreen from '/Users/aryan./Downloads/js prct/portfolioreact/src/components/IntroScreen.jsx';
-import CustomCursor from "/Users/aryan./Downloads/js prct/portfolioreact/src/components/CustomCursor.jsx";
+import IntroScreen from './components/IntroScreen.jsx';
+import CustomCursor from "./components/CustomCursor.jsx";
 const Loader = () => { 
-  return (  
+  return (   
     <div className="loader-container"> 
       <div className="loader"></div>
     </div>

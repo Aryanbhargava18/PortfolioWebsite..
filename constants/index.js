@@ -15,13 +15,6 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
-    carrent,
-    jobit,
-    tripguide,
     threejs,
   } from "../assets";
   import Rayban from '../assets/Rayban.png';

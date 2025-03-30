@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SplitText from './SplitText.jsx'; // Adjust path if necessary
-import '/Users/aryan./Downloads/js prct/portfolioreact/src/components/css/intro.css'; // Ensure this path is correct
+import '/src/components/css/intro.css'; // Ensure this path is correct
 
 function IntroScreen({ onIntroComplete }) {
   const [showIntro, setShowIntro] = useState(true);

@@ -13,7 +13,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif,;
+  font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
 }
@@ -21,7 +21,7 @@ html {
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
-  display: block;
+  display: block; 
 }
 
 .black-gradient {
@@ -46,6 +46,16 @@ html {
     #804dee 0%,
     rgba(60, 51, 80, 0) 100%
   );
+}
+
+.font-dancing {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+}
+
+.font-cinzel {
+  font-family: "Cinzel", serif;
+  font-optical-sizing: auto;
 }
 
 .green-pink-gradient {
